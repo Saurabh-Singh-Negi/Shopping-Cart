@@ -24,7 +24,7 @@ const Products = () => {
     }
     return (
         <>
-            <div className='flex flex-wrap justify-center pb-5'>
+            <div className='flex flex-wrap justify-center py-5'>
                 {
                     products.map((products) => {
                         return (

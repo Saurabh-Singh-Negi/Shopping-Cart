@@ -4,8 +4,7 @@ import Products from '../components/Products'
 const Home = () => {
 
     return (
-        <div className='bg-[#EEEEEE] min-h-screen'>
-            <p>Home</p>
+        <div className='bg-[#EEEEEE] min-h-screen'>            
             <Products />
         </div>
     )

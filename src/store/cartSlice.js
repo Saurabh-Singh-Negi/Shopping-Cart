@@ -9,8 +9,9 @@ export const cartSlice = createSlice({
         add(state,action) {
             state.push(action.payload);
         },
-        remove(state) {
-            // state.value -= 1;
+        remove(state,action) {
+            return state.filter((ele) => ele.id !== action.payload)
+            
         }
     }
 })
