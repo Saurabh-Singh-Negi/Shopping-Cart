@@ -24,14 +24,14 @@ const Products = () => {
     }
     return (
         <>
-            <div className='flex justify-center gap-2rem flex-wrap items-center'>
+            <div className='flex flex-wrap justify-center pb-5'>
                 {
                     products.map((products) => {
                         return (
-                            <div key={products.id} className='w-[200px] border-2 border-red-600 flex flex-col items-center'>
-                                <img className='w-[80px]' src={products.image} alt="" />
-                                <p>{products.title}</p>
-                                <p>{products.price}</p>
+                            <div key={products.id} className='w-1/5 m-1 p-6 bg-white flex flex-col items-center'>
+                                <img className='w-[100px]' src={products.image} alt="" />
+                                <h5 className='flex-1'>{products.title}</h5>
+                                <h5>{products.price}</h5>
                                 <button onClick={() => handleClick(products)} className='bg-green-500 p-1'>Add to Cart</button>
                             </div>
                         )
