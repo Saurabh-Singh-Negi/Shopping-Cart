@@ -19,7 +19,7 @@ const Cart = () => {
                 <div className='text-center mt-10 text-3xl font-bold text-red-500'>
                     <h1>No data to display yet...</h1>
                 </div>
-                :"asda"
+                :""
             }
             <div className='flex flex-col items-center'>
                 {
