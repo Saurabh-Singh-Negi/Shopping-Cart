@@ -11,9 +11,16 @@ const Cart = () => {
         dispatch(remove(id));
         console.log(products)
     }
+    
     return (
         <>
-            <p>Cart</p>
+            {
+                products.length === 0? 
+                <div className='text-center mt-10 text-3xl font-bold text-red-500'>
+                    <h1>No data to display yet...</h1>
+                </div>
+                :"asda"
+            }
             <div className='flex flex-col items-center'>
                 {
                     products.map((product) => (
